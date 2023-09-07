@@ -1,5 +1,7 @@
 import { productos } from "../data/productos.js";
 
+let Destacados = document.querySelector("#content-destacados");
+
 let contenedorDestacados = document.querySelector("#content-destacados");
 
 const cargarProducto = () => {
