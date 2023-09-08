@@ -1,15 +1,32 @@
-// Obtén el valor ingresado en el campo "Correo Electrónico o Nombre de Usuario"
-const emailOrUsername = document.getElementById("emailOrUsername").value;
-
-// Realiza la verificación buscando en tus registros de usuarios
-const usuarioEncontrado = usuariosRegistrados.find((usuario) => {
-    // Verifica si el valor ingresado coincide con el correo electrónico o el nombre de usuario
-    return usuario.correo === emailOrUsername || usuario.nombreUsuario === emailOrUsername;
-});
-
-if (usuarioEncontrado) {
-    // El usuario ha iniciado sesión con éxito, realiza las acciones correspondientes
-} else {
-    // Muestra un mensaje de error, indicando que los datos son incorrectos
-    alert("Correo Electrónico o Nombre de Usuario incorrecto. Por favor, inténtalo nuevamente.");
+const userAdmin={
+    username: "Admin",
+    email:"admin@Deconook.com",
+    password:"12345678",
+    avatar: "https://icons8.com/icons/set/avatar-"
 }
+
+const logIn = (event)=>{
+    event.preventDefault();
+
+    let correo = document.querySelector("#correo").value;
+    let pass = document.querySelector("#pass").value;
+  
+    if (correo == userAdmin.email && pass == userAdmin.password) {
+      localStorage.setItem(
+        "auth",
+        JSON.stringify({
+          user: userAdmin.username,
+          email: userAdmin.email,
+          avatar: userAdmin.avatar,
+        })
+      );
+  
+      location.replace("/pages/admin.html");
+    } else {
+      alert("El correo o la contraseña no son correctos");
+    }
+  };
+  
+  
+  document.querySelector("form").addEventListener("submit", logIn);  
+

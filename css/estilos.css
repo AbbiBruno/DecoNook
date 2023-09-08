@@ -2,6 +2,54 @@
 nav{
     background-color: #93B1A6;
     color: #040D12;
+    z-index:100;
+}
+
+.logo_nav {
+  width: 90px;
+  height: 90px;
+  border-radius: 150px;
+}
+/*login*/
+.log-login {
+  width: 90px;
+  height: 90px;
+  border-radius: 150px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.imagen-login{
+  max-width: 100%;
+  height: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa; /* Cambia el color de fondo según tus preferencias */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form img {
+  max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto; /* Evita que la imagen se estire */
+}
+
+.form form {
+  width: 100%;
+  max-width: 400px; /* Ajusta el ancho del formulario según tus preferencias */
+  margin-top: 20px;
 }
 
 .container-search{

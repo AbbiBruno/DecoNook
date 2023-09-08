@@ -2,7 +2,6 @@ let auth = JSON.parse(localStorage.getItem("auth")) || null;
 let contenido = document.querySelector("#main");
 let boton = document.querySelector("#logOut");
 
-// let peli1 = new Pelicula();
 
 if (!auth) {
   boton.classList = "d-none";
