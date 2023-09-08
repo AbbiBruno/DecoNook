@@ -9,14 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
-  <body class="">
+  <body class="d-flex flex-column vh-100 justify-content-between container-fluid m-0 p-0">
         <!-- nav  -->
         <header class="sticky-top w-100">
           <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <div class="d-flex align-items-center gap-2">
-                  <img class="logo_nav" src="/assets/logo_deco_nook.jpeg" alt="logo DecoNook" />
+                  <img class="logo_nav" src="../assets/logo_deco_nook.jpeg" alt="logo" />
+                  <span>DecoNook</span>
                 </div>
               </a>
               <button
@@ -72,44 +73,76 @@
           </nav>
           
         </header>
-    <div class="container">
-      <div class="row contenedor d-flex align-items-center">
-        <div class="col-12 col-md-6 offset-md-3">
-          <div class="card">
-            <div class="nav p-3 text-white d-flex align-items-center gap-2">
-              <img
-                src="../assets/logo_deco_nook.jpeg"
-                class="card-img-top logo"
-                alt="camera"
-              />
-              <span class="fs-3">
-                
-              </span>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Inicio de sesión</h5>
-              <form class="row">
-                <div class="col-12 mb-3">
-                  <label class="form-label">Correo</label>
-                  <input class="form-control" type="email" id="correo" />
+        <main class="container-fluid d-flex align-items-center justify-content-center">
+          <div class="container mt-5 text-center">
+            <div class="form text-center">
+              <div class="row mt-5 ">
+                <div class="col-md-6 mt-5">
+                  <form class="text">
+                    <div class="card-body">
+                      <div class="nav p-3 text-white d-flex align-items-center gap-2">
+                        <img
+                          src="../assets/logo_deco_nook.jpeg"
+                          class="card-img-top logo"
+                          alt="logo"
+                        />
+                      </div>
+                      <h5 class="card-title">Inicio de sesión</h5>
+                      <form class="row">
+                        <div class="col-12 mb-3 align-items-center">
+                          <label class="form-label">Correo</label>
+                          <input class="form-control" type="email" id="correo" />
+                        </div>
+                        <div class="col-12 mb-3">
+                          <label class="form-label">Contraseña</label>
+                          <input class="form-control" type="password" id="pass" />
+                        </div>
+                        <div class="col-12 mb-3 d-grid">
+                          <button class="btn btn-login">Iniciar Sesión</button>
+                        </div>
+                      </form>
+                      <div class="text-center">
+                        <a class="nav-link" href="/">Volver a la página principal</a>
+                      </div>
+                    </div>
+                          
+                    <div class="d-grid gap-2 mt-3"> 
+                      <button class="btn mt-3" type="button" onclick="signInWithGoogle()">
+                        <img class="vh-3" src="/assets/icons8-logo-de-google-32.png" alt="Logo Google">Log in with Google</button>
+                      <button class="btn" type="button" onclick="signInWithFacebook()">
+                        <img src="/assets/icons8-facebook-32.png" alt="logo facebook">Log in with Facebook</button>
+                    </div>
+                    
+                  </form>
+          
                 </div>
-                <div class="col-12 mb-3">
-                  <label class="form-label">Contraseña</label>
-                  <input class="form-control" type="password" id="pass" />
+                <div class="col-md-6 d-none d-md-block mt-5">
+                  <img src="/assets/pexels-medhat-ayad-447592.jpg" alt="Imagen" class="img-fluid">
                 </div>
-                <div class="col-12 mb-3 d-grid">
-                  <button class="btn btn-primary">Iniciar</button>
-                </div>
-              </form>
-              <div class="text-center">
-                <a class="nav-link" href="/">Volver a la página principal</a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
+        </main>  
+        <footer class="container-fluid footer-contenedor" style="background-color: #93b1a6 ">
+          <section class=" row flex-column row-contenedor">
+              <div class="col logo-footer text-center mb-3">
+                  <img src="../assets/Logo2.png" alt="logo" />
+              </div>
+              <div class="col text-white text-center d-flex justify-content-around">
+                  <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                  <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+              </div>
+              <div class="col text-white text-center mt-3">
+                  <div class="col-12">
+                      <p>
+                          <small>DecoNook &copy; Todos los derechos reservados</small>
+                      </p>
+                  </div>
+               </div>
+          </section>
+        </footer>
+        
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
