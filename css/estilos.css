@@ -35,6 +35,13 @@ body {
   height: auto;
 }
 
+/*avatar*/
+
+.user-avatar{
+  width: 30px;
+  border-radius: 50%;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -84,6 +91,7 @@ input{
   text-align: center;
   border-color: transparent;
 }
+
 /* footer */
 .footer {
     background-color:  #93B1A6;
