@@ -26,7 +26,7 @@ nav{
 card {
   width: 80%;
   height: 80px
-  
+  cover
 }
 .card-img-top {
   max-width: 100%; /* Adjust this value as needed */
