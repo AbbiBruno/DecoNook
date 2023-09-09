@@ -1,7 +1,14 @@
+body{
+  background-color: #040D12;
+}
 /* nav */
 nav{
   background-color: #93B1A6;
   color: #040D12;
+}
+.carousel-inner img{
+  width: 90px; 
+  height: 90px;
 }
 #carousel {
   position: relative;
@@ -22,6 +29,7 @@ nav{
   color: white;
   z-index: 1;
 }
+
 /* card */
 card {
   width: 80%;
@@ -29,9 +37,9 @@ card {
   cover
 }
 .card-img-top {
-  max-width: 100%; /* Adjust this value as needed */
-  max-height: 200px; /* Adjust this value as needed */
-  height: auto; /* This ensures the aspect ratio is maintained */
+  max-width: 100%; 
+  max-height: 200px;
+  height: auto; 
   object-fit: cover;
 }
 .card-body{
@@ -49,6 +57,26 @@ card {
   font-size: 60px;
   border-color: transparent;
   text-align: center
+}
+/* promo */
+.card-group-info {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.card-info {
+  width: 30%; 
+  margin-right: 10px;
+}
+
+.card-info img {
+  width: 200px; /* Cambia el valor según tus necesidades */
+  height: auto;
+  max-width: 100%;
+  height: auto;
+}
+.card-body-info{
+  color: white;
 }
 /* buscardor */
 .container-search{
@@ -77,15 +105,31 @@ input{
   text-align: center;
   border-color: transparent;
 }
+#content-destacados{
+  width: 100%; 
+  padding: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .card-body-desctacados{
-  font-size: 30px;
-  color: black ;
+  text-align: center;
+  font-size: 15px;
+  color:rgb(7, 4, 0);
+}
+.card-enumerado{
+  background-color: #040D12;
+  color: white;
+  font-size: 50px;
 }
 .card-img-top-destacados{
-  max-width: 100%; /* Adjust this value as needed */
-  max-height:px; /* Adjust this value as needed */
-  height: auto; /* This ensures the aspect ratio is maintained */
+  width: 100%;
+  height: 100;
   object-fit: cover;
+}
+.card-title{
+  background-color: #183D3D;
+  color: white;
 }
 /* footer */
 .footer {
@@ -116,3 +160,37 @@ input{
   .social-icons a {
     color: #fff;
   }
+  /* 404 */
+  .pag404 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn_404 {
+    background-color: #93b1a6;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    color: #183d3d;
+    font-weight: bold;
+  }
+  footer{
+    background-color: #210E0A
+  }
+  footer small{
+    font-size: 10px;
+    
+  }
+  footer img {
+    width: 150px;
+  
+  }
+  .footer-contenedor{
+    width: 100%;
+  }
+  .row-contenedor{
+    width: 100%;
+  }
+  

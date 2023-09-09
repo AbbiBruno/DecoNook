@@ -1,19 +1,14 @@
-const listaProductos=()=>{
-    document.write("Productos:<br>")
-    productos.forEach(function(producto){
-    document.write(`<ul>
-    <li>  Producto: ${producto.nombre}  </li>
-    <li>  Detalle: ${producto.detalle}  </li>
-    <li>  Precio: ${producto.precio}  </li>
-    </ul>`);
-    
-    }
-    ) 
-     }
-    
-     const busqueda=(buscar)=>{
-        let resultadoDeBusqueda= productos.filter(function(producto){
-            return producto.nombre.toLocaleLowerCase().includes(buscar.toLocaleLowerCase())
-        });
-        return resultadoDeBusqueda;
-     }
+import { productos } from "../data/productos";
+document.addEventListener("keyup", (e) => {
+
+  if (e.target.matches("#content-destacados .productos")) {
+    document.querySelectorAll("productos").forEach((producto) => {
+      producto.textContent.toLocaleLowerCase().includes(e.target.value)
+
+      ? producto.classList.remove(".results-list")
+
+      : productos.classList.add(".results-list");
+
+    });
+  }
+});
