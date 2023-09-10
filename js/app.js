@@ -1,6 +1,6 @@
 let contenedorBlog=document.querySelector("#content-blog")
 let sectionInicioSesion = document.querySelector("#linkInicioSesion");
-let auth=JSON.parse(localStorage.getItem("auth")) || null
+// let auth=JSON.parse(localStorage.getItem("auth")) || null
 
 
 if (auth) {
@@ -15,7 +15,7 @@ if (auth) {
 
   // Crear un enlace y configurar el atributo href
   let hipervinculo = document.createElement("a");
-  hipervinculo.href = "/pages/admin.html";
+  hipervinculo.href = "../pages/admin.html";
 
   // Agregar la imagen al enlace
   hipervinculo.appendChild(img);

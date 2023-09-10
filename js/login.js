@@ -2,7 +2,7 @@ const userAdmin={
     username: "Admin",
     email:"admin@Deconook.com",
     password:"12345678",
-    avatar: "https://icons8.com/icons/set/avatar-"
+    avatar: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg"
 }
 
 const logIn = (event)=>{

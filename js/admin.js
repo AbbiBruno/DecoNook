@@ -19,7 +19,7 @@ const cerrarSesion = () => {
   //redireccionar al home
 
   localStorage.removeItem("auth");
-  location.replace("/");
+  location.replace("/pages/indice.html");
 };
 
 boton.addEventListener("click", cerrarSesion);
