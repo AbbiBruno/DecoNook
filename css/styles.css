@@ -1,4 +1,66 @@
 
+
+  /* --------------------- */
+  /* Admin */
+*{
+    box-sizing:content-box;
+    border: 0;
+    padding: 0;
+}
+
+.mainAdm {
+    flex-wrap: wrap;
+    background-color: #040D12;
+    color: #93B1A6;
+    /* height: 100vh; */
+    width: 100vw;
+}
+
+.articulosAdm{
+    display: flex;
+    justify-content: center; 
+}
+
+.articulosAdm table th{
+    color: #93B1A6;
+}
+
+.articulosAdm table tr{
+    color: white;
+}
+
+.botonesAdm{
+    display: flex;
+    justify-content: end;
+}
+
+.botonesAdm button{
+    background-color: #93B1A6;
+    color: ##040D12;
+}
+
+.modalBodyAdm{
+    background-color: #93B1A6;
+}
+
+.modalBodyAdm button{
+    background-color: #040D12;
+    color: white;
+}
+
+.modalHeaderAdm{
+    background-color: #040D12;
+    color: white;
+}
+
+.modalHeaderAdm h1{
+    color: white;
+}
+
+.modalHeaderAdm button{
+    background-color: #93B1A6;
+}
+
 body{
   background-color: #040D12;
 }
@@ -195,4 +257,5 @@ input{
     width: 100%;
   }
   
+
 
