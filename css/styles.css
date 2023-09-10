@@ -1,5 +1,4 @@
 
-
 .container_detalle {
   display: flex;
   justify-content: center;
@@ -239,6 +238,8 @@ input{
   background-color: #183D3D;
   color: white;
 }
+
+
 /* footer */
 .footer {
     background-color:  #93B1A6;
@@ -268,6 +269,7 @@ input{
   .social-icons a {
     color: #fff;
   }
+
   /* 404 */
   .pag404 img {
     width: 100%;
