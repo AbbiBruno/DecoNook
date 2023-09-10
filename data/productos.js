@@ -1,5 +1,6 @@
 let productos = [
 
+
     {
       codigo: "P001",
       nombre: "Lámpara de mesa",

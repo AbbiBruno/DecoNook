@@ -1,5 +1,50 @@
 
 
+.container_detalle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px !important;
+}
+
+.producto_detalle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+}
+
+.cont_detalle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.portada {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 70%;
+  height: 100%;
+}
+
+.portada img {
+  width: 70%;
+  height: 70%;
+}
+
+.descripcion_detalle {
+  text-align: center;
+}
+
+.descripcion_detalle p {
+  color: white;
+}
+
+
+
   /* --------------------- */
   /* Admin */
 *{
