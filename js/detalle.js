@@ -1,4 +1,4 @@
-import { productos } from "../data/productos.js";
+import { productos } from "../data/productos.json";
 
 let parametros = location.search.split("?posicion=");
 
