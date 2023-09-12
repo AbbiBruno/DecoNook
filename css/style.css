@@ -1,0 +1,25 @@
+/* Seccion: Sobre Nosotros */
+
+  #carouselInicio {
+    width: 70%;
+    height: 20%;
+  }
+  
+  .imagenNosotros img {
+      filter: brightness(50%);
+    }
+  
+    .descrip-Nosotros{
+    background-color: #183d3d;
+    color: #fff;
+    border:none;
+    border-radius: 0%;
+    margin-top: 0%;
+    margin-bottom: 2rem;
+    }
+  
+    #tarjNosotros{
+      color: #fff;
+      width: 16rem;
+      margin-bottom: 2rem;
+    }
