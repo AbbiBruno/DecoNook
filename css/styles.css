@@ -1,121 +1,7 @@
-.container_detalle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px !important;
-}
-
-.producto_detalle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-size: 30px;
-}
-
-.cont_detalle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-}
-
-.portada {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  width: 70%;
-  height: 100%;
-}
-
-.portada img {
-  width: 70%;
-  height: 70%;
-}
-
-.descripcion_detalle {
-  text-align: center;
-}
-
-.descripcion_detalle p {
-  color: white;
-}
-
-
-
-  /* --------------------- */
-  /* Admin */
-*{
-    box-sizing:content-box;
-    border: 0;
-    padding: 0;
-}
-
-.mainAdm {
-    flex-wrap: wrap;
-    background-color: #040D12;
-    color: #93B1A6;
-    /* height: 100vh; */
-    width: 100vw;
-}
-
-.articulosAdm{
-    display: flex;
-    justify-content: center; 
-}
-
-.articulosAdm table th{
-    color: #93B1A6;
-}
-
-.articulosAdm table tr{
-    color: white;
-}
-
-.botonesAdm{
-    display: flex;
-    justify-content: end;
-}
-
-.botonesAdm button{
-    background-color: #93B1A6;
-    color: ##040D12;
-}
-
-.modalBodyAdm{
-    background-color: #93B1A6;
-}
-
-.modalBodyAdm button{
-    background-color: #040D12;
-    color: white;
-}
-
-.modalHeaderAdm{
-    background-color: #040D12;
-    color: white;
-}
-
-.modalHeaderAdm h1{
-    color: white;
-}
-
-.modalHeaderAdm button{
-    background-color: #93B1A6;
-}
-
 body{
   background-color: #040D12;
 }
-/* nav */
-nav{
-  background-color: #93B1A6;
-  color: #040D12;
-}
-.carousel-inner img{
-  width: 90px; 
-  height: 90px;
-}
+
 #carousel {
   position: relative;
 }
@@ -137,10 +23,16 @@ nav{
 }
 
 /* card */
-card {
-  width: 80%;
-  height: 80px
-  cover
+nav img{
+  object-fit: cover;
+}
+.card{
+  background-color: transparent;
+}
+.custom-img {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
 }
 .card-img-top {
   max-width: 100%; 
@@ -170,20 +62,16 @@ card {
   justify-content: center; 
   align-items: center;
 }
-.card-info {
-  width: 30%; 
-  margin-right: 10px;
-}
 
 .card-info img {
-  width: 200px; /* Cambia el valor según tus necesidades */
+  width: 200px;
   height: auto;
   max-width: 100%;
   height: auto;
 }
-.card-body-info{
+/* .card-body-info{
   color: white;
-}
+} */
 /* buscardor */
 .container-search{
   padding: 10px;
@@ -233,81 +121,10 @@ input{
   height: 100;
   object-fit: cover;
 }
-.card-title{
-  background-color: #183D3D;
-  color: white;
-}
-
-
-/* Seccion: Sobre Nosotros */
-body{
-  background-color: #040D12;
-}
-
-  .imagenNosotros img {
-    filter: brightness(50%);
-  }
-   
-
-  .contenedorNosotros{
-    display: block;
-    margin-top: 3%;
-    width:55%;
-    background-color: #040D12;
-    color: #fff;
-   
-  }
-  #imgNosotros{
-    border-radius: 0%;
-
-  }
-  
-  .descripcionNosotros{
-    display: block;
-    margin-top: 3%;
-    width:55%;
-    background-color: #183D3D;
-    margin-bottom: 4%;
-    border-radius: 4%;
-  }
-
-  
-.tarjetaNosotros{
-  background-color: #040D12;
-  color: #fff;
-}
-
-
 /* footer */
-.footer {
-    background-color:  #93B1A6;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer h4 {
-    color: #fff;
-  }
-  
-  .footer p {
-    font-size: 14px;
-  }
-  
-  .social-icons {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .social-icons li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  .social-icons a {
-    color: #fff;
-  }
-
+footer img{
+  object-fit: cover;
+}
   /* 404 */
   .pag404 img {
     width: 100%;
@@ -324,9 +141,7 @@ body{
     color: #183d3d;
     font-weight: bold;
   }
-  footer{
-    background-color: #210E0A
-  }
+
   footer small{
     font-size: 10px;
     
@@ -342,6 +157,3 @@ body{
     width: 100%;
   }
   
-
-
-
