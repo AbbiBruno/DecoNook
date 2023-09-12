@@ -95,6 +95,7 @@
 .botonesAdm button{
     background-color: #93B1A6;
     color: #040D12;
+    color: #040D12;
 }
 
 .modalBodyAdm{
@@ -155,6 +156,7 @@ nav{
 /* card */
 card {
   width: 80%;
+  height: 80px;
   height: 80px;
 }
 .card-img-top {
@@ -297,6 +299,9 @@ body{
 .footer {
     background-color:  #93B1A6;
     color: #fff;
+    padding: 20px;
+    text-align:justify;
+    width: 100%;
     padding: 20px;
     text-align:justify;
     width: 100%;
